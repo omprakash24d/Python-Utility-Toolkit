@@ -21,5 +21,49 @@ The first tool in this toolkit is a powerful and flexible **Duplicate File Finde
 **1. Clone the Repository**
 
 ```bash
-git clone [https://github.com/your-username/Python-Utility-Toolkit.git](https://github.com/your-username/Python-Utility-Toolkit.git)
+git clone https://github.com/omprakash24d/Python-Utility-Toolkit.git
 cd Python-Utility-Toolkit
+````
+
+**2. Run the Script**
+
+You can run the tool in two ways:
+
+  * **Interactive Mode (User-Friendly):**
+    Simply run the script with no arguments. It will guide you through the process.
+
+    ```bash
+    python duplicates.py
+    ```
+
+  * **Command-Line Interface (CLI):**
+    Use the following arguments for more control:
+
+    ```bash
+    python duplicates.py [path] [-o OUTPUT] [-d] [--dry-run] [--hash-algo {md5,sha256}]
+    ```
+
+    **Example:**
+
+    ```bash
+    # Scan a folder and save the report
+    python duplicates.py "C:\Users\YourName\Documents" -o duplicate_files_report.csv
+
+    # Scan and run a dry-run for deletion
+    python duplicates.py "C:\Users\YourName\Desktop" --delete --dry-run
+    ```
+
+#### Upcoming Tools
+
+This repository will be expanded with more useful scripts, including:
+
+  - Automated File Organizer
+  - Personal Finance Tracker
+
+Stay tuned for more updates\!
+
+-----
+
+### Contributions
+
+If you have an idea for a useful tool or an improvement to an existing one, feel free to open an issue or submit a pull request.
